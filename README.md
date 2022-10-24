@@ -27,3 +27,8 @@ API is working by doing the following:
 2. Add a file to the `root_directory` by running `echo "hi" > root_directory/foo.txt`
 3. Repeat step (1) to see the new file listed
 4. Run `curl -D- http://127.0.0.1:8000/foo.txt` to see the file contents
+
+### Unit tests
+
+Unit tests live in test_server.py. To run them, you will need to set up a Python
+environment (see above), and then run `pytest test_server.py`.
