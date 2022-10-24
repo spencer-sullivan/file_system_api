@@ -1,0 +1,18 @@
+web:
+  replicas: 2
+  image: file-system-api
+  tag: init
+  args:
+    - '--bind'
+    - '0.0.0.0'
+    - 'app:app'
+  resources:
+    requests:
+      memory: 128Mi
+      cpu: 100m
+    limits:
+      memory: 256Mi
+      cpu: 200m
+ingress:
+  rules:
+    - host: file-system-api.com

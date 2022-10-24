@@ -1,0 +1,6 @@
+helm-charts
+root_directory
+venv
+README.md
+.pytest_cache
+.mypy_cache
